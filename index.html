@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS border-radius generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>CSS border-radius generator</h1>
+
+    <div class="border-generator">
+        <div class="border-generator__inner">
+
+            <div class="border-generator__top">
+                <div class="top-left-range">
+                    <input id="tlr" class="input-range" type="range" min="0" max="100" value="0">
+                    <div id="result-tlr" class="result">0</div>
+                </div>                
+
+                <div class="top-right-range">
+                    <input id="trr" class="input-range" type="range" min="0" max="100" value="0">
+                    <div id="result-trr" class="result">0</div>
+                </div>                
+            </div>
+            <!-- /.border-generator__top -->            
+
+            <div class="border-generator__middle">
+                <div class="cube">cube</div>
+            </div>
+            <!-- /.border-generator-middle -->
+
+            <div class="border-generator__bottom">
+                <div class="bottom-left-range">
+                    <input id="blr" class="input-range" type="range" min="0" max="100" value="0">
+                    <div id="result-blr" class="result">0</div>
+                </div>                
+
+                <div class="bottom-right-range">
+                    <input id="brr" class="input-range" type="range" min="0" max="100" value="0">
+                    <div id="result-brr" class="result">0</div>
+                </div>                
+            </div>
+            <!-- /.border-generator__bottom -->            
+
+            <div class="total-result">
+                <button id="btn">Вычислить</button>
+                <div>border-radius: <span id="totalResult"></span>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.border-generator__inner -->
+
+    </div>
+    <!-- /.border-generator -->
+
+    <script src="main.js"></script>
+</body>
+</html>
